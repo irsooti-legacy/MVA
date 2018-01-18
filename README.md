@@ -133,6 +133,30 @@ Le view hanno degli helper che consistono in attributi (che iniziano con `asp-`)
 </form>
 ```
 
+### Tag Helpers
+
+Esiste anche la possibilità di creare, oltre ai tag `asp-`, di creare dei tag personalizzati. Per farlo, occorre estendere la classe `Microsoft.AspNetCore.Razor.TagHelpers.TagHelper`, fare un `override` sul metodo `Process` o `ProcessAsync` e far eseguire le istruzioni desiderate. Di seguito l'esempio:
+
+```cs
+namespace Mymva.CustomTagHelpers
+{
+    public class RepeatTagHelper : TagHelper
+    {
+        public int Count { get; set; }
+        
+        // Ripete l'elemento sotto il tag <repeat></repeat>
+        // NB: TagHelper è il suffisso che non va ripetuto 
+        public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+        {
+            for (int i = 0; i < Count; i++)
+            {
+                output.Content.AppendHtml(await output.GetChildContentAsync(useCachedResult: false));
+            }
+                
+        }
+    }
+}
+```  
 ## Link utili
 
 - mva.microsoft.com
