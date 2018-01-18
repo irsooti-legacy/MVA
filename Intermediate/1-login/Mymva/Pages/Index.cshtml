@@ -1,0 +1,8 @@
+﻿@page
+    @inject Microsoft.Extensions.Configuration.IConfiguration Configuration  
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@Configuration["Logging:LogLevel:Default"]
