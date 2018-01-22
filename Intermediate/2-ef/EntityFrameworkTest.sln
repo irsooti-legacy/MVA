@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSeeding", "EntityFrameworkTest\DataSeeding.csproj", "{A035CB5D-4E9F-40DF-9A47-9492EE97613D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A035CB5D-4E9F-40DF-9A47-9492EE97613D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A035CB5D-4E9F-40DF-9A47-9492EE97613D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A035CB5D-4E9F-40DF-9A47-9492EE97613D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A035CB5D-4E9F-40DF-9A47-9492EE97613D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95BDA7C4-E3E4-45D2-B9A7-A331CF3644FD}
+	EndGlobalSection
+EndGlobal
