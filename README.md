@@ -180,7 +180,7 @@ Per eseguirlo è necessario scrivere il comando `$ dotnet watch run`.
 - **.AsNoTracking()**: http://www.c-sharpcorner.com/UploadFile/ff2f08/entity-framework-and-asnotracking/ 
 - **Autenticazione di terze parti**: https://docs.microsoft.com/en-us/aspnet/core/security/authentication/
 - **Documentazione per le API**: https://docs.microsoft.com/it-it/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio
-- **Middleware**: [middleware.md]("./Middleware.md")
+- **Middleware**: [middleware.md](./Middleware.md)
 - **View Component**: https://docs.microsoft.com/it-it/aspnet/core/mvc/views/view-components
-- **Hosting**: [ https://docs.microsoft.com/it-it/aspnet/core/fundamentals/hosting?tabs=aspnetcore2x ]  [ [Kestrel]("https://docs.microsoft.com/it-it/aspnet/core/fundamentals/servers/?tabs=aspnetcore2x") ]
+- **Hosting**: [ https://docs.microsoft.com/it-it/aspnet/core/fundamentals/hosting?tabs=aspnetcore2x ]  [ [Kestrel](https://docs.microsoft.com/it-it/aspnet/core/fundamentals/servers/?tabs=aspnetcore2x) ]
 - **Location e Globalization** : https://docs.microsoft.com/it-it/aspnet/core/fundamentals/localization
