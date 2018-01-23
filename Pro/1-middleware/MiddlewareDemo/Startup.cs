@@ -24,11 +24,16 @@ namespace MiddlewareDemo
         {
             loggerFactory.AddConsole(LogLevel.Information);
             var logger = loggerFactory.CreateLogger("Middleware Demo");
+            if (env.IsStaging())
+            {
+                Console.WriteLine("Siamo in staging");
+            }
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseStaticFiles();
+            app.UseMiddleware<EnvironmentMiddleware>();
+            
             app.Use(async (context, next) =>
             {
                 var timer = Stopwatch.StartNew();
@@ -37,6 +42,7 @@ namespace MiddlewareDemo
                 logger.LogInformation($"=================> Completed request in: {timer.ElapsedMilliseconds}ms");
             });
 
+            app.UseStaticFiles();
             app.Map("/Contatti", a => a.Run(async context =>
             {
                 await context.Response.WriteAsync("Ecco i contatti");
@@ -44,6 +50,7 @@ namespace MiddlewareDemo
             app.MapWhen(context => context.Request.Headers["User-Agent"].First().Contains("Firefox"), FirefoxRoute);
             app.Run(async (context) =>
             {
+                //context.Response.Headers.Add("")
                 await context.Response.WriteAsync("Hello World!");
             });
         }

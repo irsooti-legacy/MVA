@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="EnvironmentMiddleware.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
     <PackageReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.0" />
     <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" version="2.0.0" />
