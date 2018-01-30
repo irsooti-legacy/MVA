@@ -185,3 +185,4 @@ Per eseguirlo è necessario scrivere il comando `$ dotnet watch run`.
 - **Hosting**: [ https://docs.microsoft.com/it-it/aspnet/core/fundamentals/hosting?tabs=aspnetcore2x ]  [ [Kestrel](https://docs.microsoft.com/it-it/aspnet/core/fundamentals/servers/?tabs=aspnetcore2x) ]
 - **Location e Globalization** : https://docs.microsoft.com/it-it/aspnet/core/fundamentals/localization
 - **View Components** : [viewcomponents.md](./Viewcomponents.md)
+- **Unit of work** : [UnitOfWork.md](./Viewcomponents.md)
