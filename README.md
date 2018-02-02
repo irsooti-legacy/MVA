@@ -186,3 +186,4 @@ Per eseguirlo è necessario scrivere il comando `$ dotnet watch run`.
 - **Location e Globalization** : https://docs.microsoft.com/it-it/aspnet/core/fundamentals/localization
 - **View Components** : [viewcomponents.md](./Viewcomponents.md)
 - **Unit of work** : [UnitOfWork.md](./UnitOfWork.md)
+- **Cors**: [EnablingCors.md](./EnablingCors.md)
